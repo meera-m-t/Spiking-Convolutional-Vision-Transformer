@@ -32,7 +32,7 @@ $ python resize.py
 To train the model, you can run: 
 
 ## Model Parallelism
-To take advantage of multiple GPUs to train our larger model. We modified the library [`SpikeTorch`](https://github.com/miladmozafari/SpykeTorch/tree/master/SpykeTorch) to work for multbatch with multiple GPUs (see parrlell_SpykeTorch).
+To take advantage of multiple GPUs to train our larger model. We modified the library [`SpikeTorch`](https://github.com/miladmozafari/SpykeTorch/tree/master/SpykeTorch) to work for multbatch with multiple GPUs (see parrlell_SpykeTorch).  `Note that in SpykeTorch’s modules and functionalities such as Convolution or Pooling, the mini-batch dimension is sacrificed for the time dimension. Therefore, it does not provide built-in batch processing at the moment.`
 
 
 
