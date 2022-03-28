@@ -22,6 +22,12 @@ $ python resize.py
 ```
 
 ## Train the model
+To create an environment with  Python 3.8and download pytorch in CUDA Toolkit 11.3 run:
+
+```bash
+conda create -n py3.8 python=3.8
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+```
 To train the model, you can run: 
 
 ## Model Parallelism
