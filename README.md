@@ -6,8 +6,8 @@ This repository presents the implementation of `SCvT` model from the paper Spiki
 To create an environment with  Python 3.8and download pytorch in CUDA Toolkit 11.3 run:
 
 ```bash
-conda create -n py3.8 python=3.8
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+$conda create -n py3.8 python=3.8
+$conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 ```
 To install all requirements via pip:
 ```bash
