@@ -22,7 +22,7 @@ $ wget http://cs231n.stanford.edu/tiny-imagenet-200.zip
 $ unzip tiny-imagenet-200.zip
 ```
 
-To resize the images in Tiny-Imagenet-200 dataset run:
+To resize the images in Tiny-Imagenet-200 dataset from `256X256` to `224X224`  run:
 ```bash
 $ python resize.py
 ```
