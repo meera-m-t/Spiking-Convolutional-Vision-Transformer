@@ -1,6 +1,6 @@
 # Spiking-Convolutional-Vision-Transformer
 This repository presents the implementation of `SCvT` model from the paper Spiking Convolutional Vision Transformer (under review).
-![model](model-1.png)
+![model](images/model-1.png)
 
 ## Install
 To create an environment with  Python 3.8and download pytorch in CUDA Toolkit 11.3 run:
@@ -29,7 +29,10 @@ $ python resize.py
 
 ## Train the model
 
-To train the model, you can run: 
+To train the model, you can run:
+```bash
+python run.py
+``` 
 
 ## Model Parallelism
 To take advantage of multiple GPUs to train our larger model. We modified the library [`SpikeTorch`](https://github.com/miladmozafari/SpykeTorch/tree/master/SpykeTorch) to work for multbatch with multiple GPUs (see [parrlell_SpykeTorch](https://github.com/meera-m-t/parallelSpykeTorch)).  `Note that in SpykeTorch’s modules and functionalities such as Convolution or Pooling, the mini-batch dimension is sacrificed for the time dimension. Therefore, it does not provide built-in batch processing at the moment.`
